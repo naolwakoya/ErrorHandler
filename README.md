@@ -1,0 +1,2 @@
+# ErrorHandler
+To handle network errors. Packets can be lost, delayed, and duplicated. TFTP's “wait for acknowledgment/timeout/retransmit” protocol helps deal with this. Our program contain the fix for the Sorcerer's Apprentice bug (i.e. duplicate ACKs must not be acknowledged, and only the side that is currently sending DATA packets is required to retransmit after a timeout, though both sides may retransmit).
